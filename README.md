@@ -161,3 +161,90 @@ plt.show()
 
 <a name="example3"></a>
 ### Example 3: coloring areas between plots
+
+Our last example introduces the final exercise. Imagine we have 2 plots on the same figure:
+
+```python
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+font_size = 8
+matplotlib.rcParams['axes.labelsize'] = font_size
+matplotlib.rcParams['axes.titlesize'] = font_size
+matplotlib.rcParams['xtick.labelsize'] = font_size
+matplotlib.rcParams['ytick.labelsize'] = font_size
+matplotlib.rcParams['legend.fontsize'] = font_size
+matplotlib.rc('axes',edgecolor='gray')
+matplotlib.rcParams['axes.linewidth'] = 0.2
+matplotlib.rcParams['legend.frameon'] = 'False'
+
+fig, ax = plt.subplots()
+
+x = np.arange(0.0, 2.0, 0.01) # Data for plotting
+
+y1 = 1+x+x*x
+ax.plot(x, y1)
+y2 = -4+5*x+x*x+x*x*x
+ax.plot(x, y2)
+
+ax.set(xlabel='x in range 0..2 by steps of 0.01', ylabel='', title='plot coloring example')
+plt.grid(alpha=0.2)
+
+plt.legend() # show legend
+
+fig.savefig("example3.png")
+plt.show()
+```
+
+The first plot (x, y1) is of the function 1+x+x^2, the second plot (x, y2) is of the function -4+5x+x^2+x^3. Run the code and move on to the exercise to learn additional styling and how to color areas between plots.
+
+#### Exercise 3
+
+Again using hints from this text and [matplotlib documentation](https://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rc), modify the above Example 3 code to include:
+
+* add legends to the two plots (hint: use attribute `legend` with the plot command); finally, you have to display the legend (`plt.legend`)
+* make the two plots red and blue (use the attribute `c` of `.plot`); you can also use pastel colors, like #ff6961 for red and #779ecb for blue
+* make lines of the two plots thicker; use `linewidth` attribute of the plot method
+* color the area in-between the plots with a light gray (#dddddd or similar) color; hint: try using `fill_between`
+* set x-axis and y-axis limits to some reasonable value, so the labels on the sides of the axis are displayed nicely; an example could be -5..20 (y), -0.2..2.2 (x); use `set_xlim` and `set_ylim`
+
+<details>
+<summary>Solution</summary>
+
+```python
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+font_size = 8
+matplotlib.rcParams['axes.labelsize'] = font_size
+matplotlib.rcParams['axes.titlesize'] = font_size
+matplotlib.rcParams['xtick.labelsize'] = font_size
+matplotlib.rcParams['ytick.labelsize'] = font_size
+matplotlib.rcParams['legend.fontsize'] = font_size
+matplotlib.rc('axes',edgecolor='gray')
+matplotlib.rcParams['axes.linewidth'] = 0.2
+matplotlib.rcParams['legend.frameon'] = 'False'
+
+fig, ax = plt.subplots()
+
+x = np.arange(0.0, 2.0, 0.01) # data for plotting
+
+y1 = 1+x+x*x
+ax.plot(x, y1, c='#ff6961', label="1+x+x^2", linewidth=2)
+y2 = -4+5*x+x*x+x*x*x
+ax.plot(x, y2, c='#779ecb', label="-4+5x^2+x^3", linewidth=2)
+
+ax.fill_between(x, y1, y2, color='#dddddd') # fill the space in-between the plots
+
+ax.set(xlabel='x in range 0..2 by steps of 0.01', ylabel='', title='plot coloring example')
+ax.set_ylim(-5, 20) # set area to display (y-axis)
+ax.set_xlim(-0.2, 2.2) # set area to display (x-axis)
+plt.grid(alpha=0.2)
+
+plt.legend() # show legend
+
+fig.savefig("example3.png")
+plt.show()
+```
+
+</details>
