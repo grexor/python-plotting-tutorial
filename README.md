@@ -8,6 +8,7 @@ Short tutorial (1.5h) on python plotting with [matplotlib](http://www.matplotlib
 - [Example 1: simple plot](#example1)
 - [Example 2: histogram](#example2)
 - [Example 3: coloring areas between plots](#example3)
+- [Summary and take home message](#summary)
 
 matplotlib 3.0.2
 ----------------
@@ -248,3 +249,36 @@ plt.show()
 ```
 
 </details>
+
+<a name="summary"></a>
+### Summary and take home message
+
+Basic plotting with matplotlib is easy however fine-tuning your plots requires some additional work. Overall, matplotlib is a very powerful tool to produce high-quality plots that we can customize in great detail.
+
+#### Quick start summary
+
+* first 3 steps:
+```python
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+```
+* you can start plotting immediatelly:
+```python
+fig, ax = plt.subplots()
+x = np.arange(0.0, 2.0, 0.01)
+y = 2*x
+ax.plot(x, y)
+```
+* easily style the `ax.plot` with several attributes
+  * `c="red"` or `c="#FF0000"`
+  * `linewidth=2` (or any integer)
+  * `label="my plot label"`: this is then recognized by `plt.legend()`
+* other useful commands
+  * `plt.grid(alpha=1)`: shows the grid
+  * `ax.set_ylim(y_from, y_to)` and `ax.set_xlim(x_from, x_to)`: set the display limits
+  * `ax.fill_between(x, y1, y2, color="lightgray")`: fills the area between y1 and y2 with light gray color
+  * `plt.tight_layout()`: usuful to make the figure nicer
+  * `fig.savefig(filename)`: save figure to file, supported formats: png, jpg, svg, pdf (simply change the file extension)
+  
+Hope you enjoyed the notes, open an issue or write if you have further ideas and comments.
