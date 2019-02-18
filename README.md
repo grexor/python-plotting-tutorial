@@ -107,10 +107,10 @@ plt.show()
 
 #### Exercise 2
 
-Let's try to style this plot and make it more compact. Try to do the following:
+Let's try to style this plot and make it more compact. With help of [matplotlib documentation](https://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rc) do the following:
 
-* change font size of axis and title to 8px (check [matplotlib documentation](https://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rc) on how to change font sizes)
-* display the grid and make it more transparent (alpha 0.2)
+* change font size of axis labels and title to 8px
+* display the grid and make it more transparent (alpha=0.2), check Example 1 to see how to display the grid
 * save the plot to a SVG file
 * try out `tight_layout()`
 
