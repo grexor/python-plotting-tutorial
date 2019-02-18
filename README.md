@@ -41,8 +41,8 @@ plt.show()
 Modify the code from Example 1 to plot tan(x) on the range of -10 .. 10, with the step of 0.1. Your points will be -10, -9.9, -9.8 .. 9.9, 10. Also, don't plot a continuous line (plot), but only plot points (scatter). Color the points red (#FF0000).
 
 <details>
-  <summary>Exercise 1 solution</summary>
-
+<summary>Solution</summary>
+  
 ```python
 import matplotlib
 import matplotlib.pyplot as plt
@@ -60,10 +60,8 @@ ax.grid()
 fig.savefig("exercise1.pdf")
 plt.show()
 ```
-  
+
 </details>
-
-
 
 plotly
 ------
