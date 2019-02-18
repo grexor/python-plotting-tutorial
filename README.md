@@ -281,4 +281,4 @@ ax.plot(x, y)
   * `plt.tight_layout()`: usuful to make the figure nicer
   * `fig.savefig(filename)`: save figure to file, supported formats: png, jpg, svg, pdf (simply change the file extension)
   
-Hope you enjoyed the notes, open an issue or write if you have further ideas and comments.
+Hope you enjoyed the tutorial, please [open an issue](https://github.com/grexor/python-plotting-tutorial/issues) if you have further comments.
