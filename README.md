@@ -22,7 +22,7 @@ The project was initiated by John D. Hunter in 2008. The initial introductory te
 
 To keep in mind: "**Matplotlib tries to make easy things easy and hard things possible**". The matplotlib "easy" part is named **pyplot** module and provides a MATLAB-like interface.
 
-![From matplotlib.org](https://matplotlib.org/_images/anatomy.png "matplotlib parts of a figure, from matplotlib.org")
+<img src="https://matplotlib.org/_images/anatomy.png" width=600>
 
 <a name="example1"></a>
 ### Example 1: simple basic plot
