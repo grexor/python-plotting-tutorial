@@ -1,5 +1,6 @@
 # python-plotting-tutorial
-Short tutorial on python plotting (3h)
+
+Short tutorial (1.5h) on python plotting with [matplotlib](www.matplotlib.org)
 
 matplotlib 3.0.2
 ----------------
