@@ -2,9 +2,16 @@
 
 Short tutorial (1.5h) on python plotting with [matplotlib](http://www.matplotlib.org)
 
+### Contents of tutorial
+
+- [About matplotlib](#matplotlib)
+- [Example 1](#example1)
+- [Example 2](#example2)
+
 matplotlib 3.0.2
 ----------------
 
+<a name="matplotlib"></a>
 ### About matplotlib
 
 The project was initiated by John D. Hunter in 2008. The initial introductory text stated:
@@ -15,6 +22,7 @@ To keep in mind: "**Matplotlib tries to make easy things easy and hard things po
 
 ![From matplotlib.org](https://matplotlib.org/_images/anatomy.png "matplotlib parts of a figure, from matplotlib.org")
 
+<a name="example1"></a>
 ### Example 1
 
 We start with this basic example of plotting 1+sin(x) on range 0..2:
@@ -39,7 +47,7 @@ plt.show() # show figure
 
 Notice the figure is saved to **example1.png** using `.savefig()` and displayed with `show()`.
 
-### Exercise 1
+#### Exercise 1
 
 Modify the code from Example 1 to plot tan(x) on the range of -10 .. 10, with the step of 0.1. Your points will be -10, -9.9, -9.8 .. 9.9, 10. Also, don't plot a continuous line (plot), but only plot points (scatter). Color the points red (#FF0000).
 
@@ -66,6 +74,7 @@ plt.show()
 
 </details>
 
+<a name="example2"></a>
 ### Example 2
 
 A slightly more complex example is plotting a histogram:
@@ -95,7 +104,7 @@ fig.tight_layout() # make display nicer
 plt.show()
 ```
 
-### Exercise 2
+#### Exercise 2
 
 Let's try to style this plot and make it more compact. Try to do the following:
 
