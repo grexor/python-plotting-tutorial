@@ -5,8 +5,9 @@ Short tutorial (1.5h) on python plotting with [matplotlib](http://www.matplotlib
 ### Contents of tutorial
 
 - [About matplotlib](#matplotlib)
-- [Example 1](#example1)
-- [Example 2](#example2)
+- [Example 1: simple plot](#example1)
+- [Example 2: histogram](#example2)
+- [Example 3: coloring areas between plots](#example3)
 
 matplotlib 3.0.2
 ----------------
@@ -23,7 +24,7 @@ To keep in mind: "**Matplotlib tries to make easy things easy and hard things po
 ![From matplotlib.org](https://matplotlib.org/_images/anatomy.png "matplotlib parts of a figure, from matplotlib.org")
 
 <a name="example1"></a>
-### Example 1
+### Example 1: simple basic plot
 
 We start with this basic example of plotting 1+sin(x) on range 0..2:
 
@@ -75,9 +76,9 @@ plt.show()
 </details>
 
 <a name="example2"></a>
-### Example 2
+### Example 2: histogram
 
-A slightly more complex example is plotting a histogram:
+A slightly more complex example with a histogram:
 
 ```python
 import matplotlib
@@ -158,5 +159,5 @@ plt.show()
 
 </details>
 
-plotly
-------
+<a name="example3"></a>
+### Example 3: coloring areas between plots
