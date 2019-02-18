@@ -269,6 +269,7 @@ fig, ax = plt.subplots()
 x = np.arange(0.0, 2.0, 0.01)
 y = 2*x
 ax.plot(x, y)
+plt.show()
 ```
 * easily style the `ax.plot` with several attributes
   * `c="red"` or `c="#FF0000"`
