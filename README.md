@@ -16,25 +16,27 @@ To keep in mind: "**Matplotlib tries to make easy things easy and hard things po
 
 ### Example 1
 
-Basic example:
+We start with this basic example of plotting 1+sin(x) on range 0..2:
 
 ```python
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
-t = np.arange(0.0, 2.0, 0.01) # Data for plotting
-s = 1 + np.sin(t)
+x = np.arange(0.0, 2.0, 0.01) # data for plotting
+y = 1 + np.sin(x)
 
-fig, ax = plt.subplots()
-ax.plot(t, s)
+fig, ax = plt.subplots() # get figure in fig and axis in ax object
+ax.plot(x, y)
 
-ax.set(xlabel='time (s)', ylabel='1+sin(x)', title='basic matplotlib example')
+ax.set(xlabel='time (s)', ylabel='1+sin(x)', title='basic matplotlib example') # set xlabel, ylabel and title
 ax.grid()
 
-fig.savefig("example1.png")
-plt.show()
+fig.savefig("example1.png") # save figure
+plt.show() # show figure
 ```
+
+Notice the figure is saved to **example1.png** using `.savefig()` and displayed with `show()`.
 
 ### Exercise 1
 
