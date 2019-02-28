@@ -258,14 +258,14 @@ Basic plotting with matplotlib is easy however fine-tuning your plots requires s
 
 #### Quick start summary
 
-* first 3 steps:
+* first steps:
 ```python
 import matplotlib
 # matplotlib.use('Agg') # non-interactive back-end
 import matplotlib.pyplot as plt
 import numpy as np
 ```
-* you can start plotting immediatelly:
+* start plotting immediatelly:
 ```python
 fig, ax = plt.subplots()
 x = np.arange(0.0, 2.0, 0.01)
