@@ -31,6 +31,7 @@ We start with this basic example of plotting 1+sin(x) on range 0..2:
 
 ```python
 import matplotlib
+# matplotlib.use('Agg') # use this backend if you would just like to save images/figures to files (PNG, JPG, PDF)
 import matplotlib.pyplot as plt
 import numpy as np
 
