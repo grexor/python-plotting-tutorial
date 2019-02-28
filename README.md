@@ -261,7 +261,7 @@ Basic plotting with matplotlib is easy however fine-tuning your plots requires s
 * first 3 steps:
 ```python
 import matplotlib
-matplotlib.use('Agg') # non-interactive back-end
+# matplotlib.use('Agg') # non-interactive back-end
 import matplotlib.pyplot as plt
 import numpy as np
 ```
