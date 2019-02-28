@@ -254,13 +254,14 @@ plt.show()
 <a name="summary"></a>
 ### Summary and take home message
 
-Basic plotting with matplotlib is easy however fine-tuning your plots requires some additional work. Overall, matplotlib is a very powerful tool to produce high-quality plots that we can customize in great detail.
+Basic plotting with matplotlib is easy however fine-tuning your plots requires some additional work. Overall, matplotlib is a very powerful tool to produce high-quality plots that you can customize in great detail.
 
 #### Quick start summary
 
 * first 3 steps:
 ```python
 import matplotlib
+matplotlib.use('Agg') # non-interactive back-end
 import matplotlib.pyplot as plt
 import numpy as np
 ```
