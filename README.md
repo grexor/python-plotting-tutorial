@@ -111,7 +111,7 @@ plt.show()
 
 Let's try to style this plot and make it more compact. With help of [matplotlib documentation](https://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rc) do the following:
 
-* change font size of axis labels and title to 8px, use **matplotlib.rcParams** and properties like **axis.labelsize**
+* change font size of axis labels and title to 8px, use commands like **matplotlib.rcParams['axes.labelsize']=8**; try to find out other properties (axes.titlesize etc.)
 * display the grid and make it more transparent (alpha=0.2), check Example 1 to see how to display the grid
 * save the plot to a SVG file
 * try out `tight_layout()`
@@ -131,7 +131,7 @@ matplotlib.rcParams['axes.titlesize'] = font_size
 matplotlib.rcParams['xtick.labelsize'] = font_size
 matplotlib.rcParams['ytick.labelsize'] = font_size
 matplotlib.rcParams['legend.fontsize'] = font_size
-matplotlib.rc('axes',edgecolor='gray')
+matplotlib.rc('axes', edgecolor='gray')
 matplotlib.rcParams['axes.linewidth'] = 0.2
 matplotlib.rcParams['legend.frameon'] = 'False'
 import matplotlib.colors as mcolors
